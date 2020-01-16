@@ -20,7 +20,7 @@ p {
 /*---------------Top container---------------*/
 
 .top-container {
-  background-color: #404b69;
+  background-color: #dbedf3;
   min-height: 600px;
   height: auto;
   width: 100%;
@@ -30,7 +30,7 @@ p {
 
 .top-container h1 {
   font-size: 3.125rem;
-  color: #dbedf3;
+  color: #404b69;
   margin-bottom: 28px;
 }
 
@@ -43,7 +43,7 @@ p {
 }
 
 .top-container p {
-  color: #dbedf3;
+  color: #404b69;
   font-size: 1.3em;
 }
 
@@ -99,6 +99,43 @@ p {
 
 .cloud-3:hover {
   right: 25%;
+}
+
+/*---------------Top container animation---------------*/
+
+.top-container {
+  width: 100%;
+  height: 100%;
+  animation: pulse 10s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.top-container h1 {
+  animation: pulse 10s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.top-container p {
+  animation: pulse 10s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #dbedf3;
+    color: #404b69;
+  }
+  50% {
+    background-color: #fdffab;
+    color: #404b69;
+  }
+  100% {
+    background-color: #404b69;
+    color: #dbedf3;
+  }
 }
 
 /*---------------Middle container---------------*/
