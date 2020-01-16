@@ -17,9 +17,12 @@ p {
   line-height: 1.5;
 }
 
+/*---------------Top container---------------*/
+
 .top-container {
   background-color: #404b69;
-  height: 600px;
+  min-height: 600px;
+  height: auto;
   width: 100%;
   text-align: center;
   padding-top: 100px;
@@ -45,7 +48,8 @@ p {
 }
 
 .tree {
-  height: 400px;
+  max-height: 400px;
+  height: 100%;
   width: auto;
   position: relative;
   top: 26px;
@@ -53,7 +57,8 @@ p {
 }
 
 .cloud-1 {
-  height: 50px;
+  max-height: 50px;
+  height: 100%;
   width: auto;
   position: absolute;
   top: 60px;
@@ -67,7 +72,8 @@ p {
 }
 
 .cloud-2 {
-  height: 50px;
+  max-height: 50px;
+  height: 100%;
   width: auto;
   position: absolute;
   top: 220px;
@@ -81,7 +87,8 @@ p {
 }
 
 .cloud-3 {
-  height: 50px;
+  max-height: 50px;
+  height: 100%;
   width: auto;
   position: absolute;
   top: 400px;
@@ -94,9 +101,13 @@ p {
   right: 25%;
 }
 
+/*---------------Middle container---------------*/
+
 .middle-container {
   background-color: #dbedf3;
 }
+
+/*---------------Profile---------------*/
 
 .profile {
   height: 350px;
@@ -119,13 +130,22 @@ p {
 
 .profile p {
   color: #283149;
-  width: 470px;
+  max-width: 470px;
+  min-width: 300px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
+/*---------------Skills+contact flexbox---------------*/
+
+.skills-contact-container {}
+
+/*---------------Skills---------------*/
+
 .skills {
-  height: 400px;
+  min-height: 400px;
+  height: auto;
   width: 100%;
   text-align: center;
   padding: 0;
@@ -137,72 +157,38 @@ p {
   color: #f95959;
 }
 
-.skill-row-1 {
-  display: inline-block;
-  height: 300px;
-  width: 300px;
-  margin: 50px auto 0 auto;
-  position: relative;
-  right: 50px;
+.skills-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  list-style: none;
 }
 
-.skill-row-1 h3 {
+.skills-row-item h3 {
   color: #283149;
-  width: 300px;
-  margin-bottom: 28px;
   transition-duration: 0.3s;
-  padding: 3px 0;
 }
 
-.skill-row-1 h3:hover {
+.skills-row-item h3:hover {
   background-color: #f73859;
   color: white;
 }
 
-.skill-row-1 p {
+.skills-row-item p {
   color: #283149;
 }
 
-.skill-row-2 {
-  display: inline-block;
-  height: 300px;
-  width: 300px;
-  margin: 50px auto 0 auto;
-}
-
-.skill-row-2 h3 {
-  color: #283149;
-  width: 300px;
-  margin-bottom: 28px;
-  transition-duration: 0.3s;
-  padding: 3px 0;
-}
-
-.skill-row-2 h3:hover {
-  background-color: #f73859;
+.skills-row-item .sushi-img-caption:hover {
+  background-color: #11999e;
   color: white;
 }
 
-.skill-row-2 p {
-  color: #283149;
+.skills-row-item {
+  width: 300px;
 }
 
-.skill-row-3 {
-  display: inline-block;
-  height: 300px;
-  width: 300px;
-  margin: 50px auto 0 auto;
-  position: relative;
-  left: 50px;
-}
-
-.skill-row-3 h3 {
-  color: #283149;
-  width: 300px;
-  margin-bottom: 28px;
-  transition-duration: 0.3s;
-  padding: 3px 0;
-}
+/*---------------Skills images---------------*/
 
 .frontend-img {
   transition-duration: 0.3s;
@@ -228,17 +214,11 @@ p {
   transform: translateY(-5px);
 }
 
-.skill-row-3 h3:hover {
-  background-color: #15b7b9;
-  color: white;
-}
-
-.skill-row-3 p {
-  color: #283149;
-}
+/*---------------Contact---------------*/
 
 .contact-me {
-  height: 350px;
+  min-height: 350px;
+  height: auto;
   width: 100%;
   text-align: center;
   padding: 0;
@@ -273,7 +253,7 @@ p {
   text-decoration: none;
   color: #fafafa;
   background-color: #404b69;
-  box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 1), inset 0 2px 1px #404b69;
+  box-shadow: inset 0 -5px 1px #283149, inset 0 2px 1px #404b69;
   padding: 12px 12px;
   border-radius: 12px;
   cursor: pointer;
@@ -286,6 +266,8 @@ p {
   position: relative;
   top: 1px;
 }
+
+/*---------------Bottom container---------------*/
 
 .bottom-container {
   background-color: #f73859;
