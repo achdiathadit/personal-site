@@ -13,23 +13,107 @@ hr {
   margin-bottom: 0;
 }
 
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18.72px;
+}
+
 p {
   line-height: 1.5;
 }
 
-/*---------------Top container---------------*/
+/*---------------Navbar---------------*/
 
+.navbar-brand {
+  filter: invert(1);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-item {
+  color: white;
+}
+
+.active {
+  background-color: grey;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.nav-item:focus,
+.nav-item:hover {
+  background-color: grey;
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50px;
+}
+
+.nav-item {
+  width: 110px;
+  text-align: center;
+}
+
+.navbar-nav {
+  position: absolute;
+  right: 50px;
+}
+
+.navbar-custom {
+  background-color: #dbedf3;
+  width: 100%;
+  height: 100px;
+  animation: pulse 10s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #dbedf3;
+    color: #404b69;
+  }
+
+  50% {
+    background-color: #fdffab;
+    color: #404b69;
+  }
+
+  100% {
+    background-color: #404b69;
+    color: #dbedf3;
+  }
+}
+
+/*---------------Top container---------------*/
 .top-container {
   background-color: #dbedf3;
   min-height: 600px;
   height: auto;
   width: 100%;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 33px;
 }
 
 .top-container h1 {
   font-size: 3.125rem;
+  font-weight: 800;
   color: #404b69;
   margin-bottom: 28px;
 }
@@ -40,6 +124,7 @@ p {
 
 .top-name:hover {
   color: #fdffab;
+  background-color: #404b69;
 }
 
 .top-container p {
@@ -48,11 +133,11 @@ p {
 }
 
 .tree {
-  max-height: 400px;
+  max-width: 350px;
   height: 100%;
-  width: auto;
+  height: auto;
   position: relative;
-  top: 26px;
+  top: 35px;
   z-index: 20;
 }
 
@@ -63,12 +148,12 @@ p {
   position: absolute;
   top: 60px;
   right: 30%;
-  transition-duration: 0.6s;
+  transition-duration: 0.9s;
   z-index: 10;
 }
 
 .cloud-1:hover {
-  right: 25%;
+  right: 23%;
 }
 
 .cloud-2 {
@@ -76,14 +161,14 @@ p {
   height: 100%;
   width: auto;
   position: absolute;
-  top: 220px;
-  left: 27%;
-  transition-duration: 0.6s;
+  top: 280px;
+  left: 20%;
+  transition-duration: 0.9s;
   z-index: 10;
 }
 
 .cloud-2:hover {
-  left: 22%;
+  left: 28%;
 }
 
 .cloud-3 {
@@ -91,18 +176,17 @@ p {
   height: 100%;
   width: auto;
   position: absolute;
-  top: 400px;
-  right: 20%;
-  transition-duration: 0.6s;
+  top: 490px;
+  right: 15%;
+  transition-duration: 0.9s;
   z-index: 10;
 }
 
 .cloud-3:hover {
-  right: 25%;
+  right: 23%;
 }
 
 /*---------------Top container animation---------------*/
-
 .top-container {
   width: 100%;
   height: 100%;
@@ -128,10 +212,12 @@ p {
     background-color: #dbedf3;
     color: #404b69;
   }
+
   50% {
     background-color: #fdffab;
     color: #404b69;
   }
+
   100% {
     background-color: #404b69;
     color: #dbedf3;
@@ -139,15 +225,13 @@ p {
 }
 
 /*---------------Middle container---------------*/
-
 .middle-container {
   background-color: #dbedf3;
 }
 
 /*---------------Profile---------------*/
-
 .profile {
-  height: 350px;
+  height: 400px;
   width: 100%;
   text-align: center;
   padding: 0;
@@ -161,6 +245,7 @@ p {
 
 .profile h2 {
   color: #f95959;
+  font-weight: 800;
   width: 300px;
   margin: 28px auto 28px auto;
 }
@@ -174,12 +259,7 @@ p {
   margin-right: auto;
 }
 
-/*---------------Skills+contact flexbox---------------*/
-
-.skills-contact-container {}
-
 /*---------------Skills---------------*/
-
 .skills {
   min-height: 400px;
   height: auto;
@@ -192,6 +272,9 @@ p {
 
 .skills h2 {
   color: #f95959;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .skills-row {
@@ -204,7 +287,10 @@ p {
 
 .skills-row-item h3 {
   color: #283149;
+  font-weight: 800;
   transition-duration: 0.3s;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .skills-row-item h3:hover {
@@ -214,6 +300,8 @@ p {
 
 .skills-row-item p {
   color: #283149;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .skills-row-item .sushi-img-caption:hover {
@@ -226,7 +314,6 @@ p {
 }
 
 /*---------------Skills images---------------*/
-
 .frontend-img {
   transition-duration: 0.3s;
 }
@@ -252,9 +339,8 @@ p {
 }
 
 /*---------------Contact---------------*/
-
 .contact-me {
-  min-height: 350px;
+  min-height: 400px;
   height: auto;
   width: 100%;
   text-align: center;
@@ -265,14 +351,17 @@ p {
 
 .contact-me h2 {
   color: #f95959;
+  font-weight: 800;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
   margin-bottom: 28px;
 }
 
 .contact-me h3 {
   color: #283149;
+  font-weight: 800;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
@@ -287,36 +376,40 @@ p {
 }
 
 .btn {
+  display: inline;
   text-decoration: none;
   color: #fafafa;
   background-color: #404b69;
   box-shadow: inset 0 -5px 1px #283149, inset 0 2px 1px #404b69;
-  padding: 12px 12px;
+  padding: 12px 12px 15px 12px;
   border-radius: 12px;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #283149;
+  background-color: #404b69;
   color: #fdffab;
   box-shadow: none;
   position: relative;
-  top: 1px;
+  top: 5px;
+  padding-bottom: 10px;
 }
 
 /*---------------Bottom container---------------*/
-
 .bottom-container {
   background-color: #f73859;
-  height: 300px;
+  color: white;
+  min-height: 350px;
   width: 100%;
   text-align: center;
   padding: 0;
   padding-top: 50px;
 }
 
-.bottom-container p {
-  color: white;
+.footer-all {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
@@ -336,6 +429,8 @@ p {
 
 .fa:hover {
   transform: rotateY(360deg);
+  color: white;
+  text-decoration: none;
 }
 
 .fa-send {
@@ -366,4 +461,9 @@ p {
 .footer-link {
   text-decoration: none;
   color: white;
+}
+
+.bottom-container p {
+  color: white;
+  margin-top: 16px;
 }
