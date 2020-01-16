@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Achdiat Hadit - your friendly full-stack dev.</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css\styles.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
@@ -12,6 +13,23 @@
 </head>
 
 <body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
+    <a class="navbar-brand" href="#">
+      <img src="images\rubik-cube.png" width="64" height="64" alt="rubikcube">
+    </a>
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">My Work</a>
+        <a class="nav-item nav-link" href="#">Contact Me</a>
+      </div>
+    </div>
+  </nav>
+  <!--End of navbar-->
   <div class="top-container">
     <div class="introduction">
       <h1>I'm <span class="top-name">Hadit</span>.</h1>
@@ -22,7 +40,7 @@
     <img class="cloud-2" src="images\cloud2.png" alt="cloud-2">
     <img class="cloud-3" src="images\cloud3.png" alt="cloud-3">
   </div>
-<!--End of top container-->
+  <!--End of top container-->
   <div class="middle-container">
     <div class="profile">
       <img class="profilepic" src="images\me-circle.png" alt="profilepic">
@@ -57,29 +75,35 @@
         <h3>I’m available for freelance job.</h3>
         <p>If you have something in mind and want to share, let's discuss it while we eat sushi together.</p>
         <br>
-        <a class="btn" href="dmztdesign@gmail.com"><i class="fa fa-send"></i>Contact Me</a>
+        <a class="btn" href="achdiat.dev@gmail.com"><span class="click-button"><i class="fa fa-send"></i>Contact Me</span></a>
       </div>
     </div>
   </div>
-<!--End of middle container-->
+  <!--End of middle container-->
   <div class="bottom-container">
-    <div class="footer">
-      <a href="https://github.com/achdiathadit" target="_blank" class="fa fa-github"></a>
-      <br>
-      <a class="footer-link">GitHub</a>
-    </div>
-    <div class="footer">
-      <a href="https://dribbble.com/achdiathadit" target="_blank" class="fa fa-dribbble"></a>
-      <br>
-      <a class="footer-link">Dribbble</a>
-    </div>
-    <div class="footer">
-      <a href="https://bit.ly/35YI3YK" target="_blank" class="fa fa-youtube"></a>
-      <br>
-      <a class="footer-link">YouTube</a>
+    <div class="footer-all">
+      <div class="footer">
+        <a href="https://github.com/achdiathadit" target="_blank" class="fa fa-github"></a>
+        <br>
+        <a class="footer-link">GitHub</a>
+      </div>
+      <div class="footer">
+        <a href="https://dribbble.com/achdiathadit" target="_blank" class="fa fa-dribbble"></a>
+        <br>
+        <a class="footer-link">Dribbble</a>
+      </div>
+      <div class="footer">
+        <a href="https://bit.ly/35YI3YK" target="_blank" class="fa fa-youtube"></a>
+        <br>
+        <a class="footer-link">YouTube</a>
+      </div>
     </div>
     <p>© 2020 Achdiat Hadit. All rights reserved</p>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
