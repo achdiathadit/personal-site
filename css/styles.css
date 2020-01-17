@@ -2,6 +2,7 @@ body {
   background-color: #fafafa;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  min-height: 100%;
 }
 
 hr {
@@ -134,8 +135,6 @@ p {
 
 .tree {
   max-width: 350px;
-  height: 100%;
-  height: auto;
   position: relative;
   top: 35px;
   z-index: 20;
@@ -176,7 +175,7 @@ p {
   height: 100%;
   width: auto;
   position: absolute;
-  top: 490px;
+  top: 530px;
   right: 15%;
   transition-duration: 0.9s;
   z-index: 10;
@@ -253,8 +252,7 @@ p {
 .profile p {
   color: #283149;
   max-width: 470px;
-  min-width: 300px;
-  width: auto;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -283,6 +281,7 @@ p {
   justify-content: space-evenly;
   margin-top: 50px;
   list-style: none;
+  padding: 0;
 }
 
 .skills-row-item h3 {
@@ -301,7 +300,7 @@ p {
 .skills-row-item p {
   color: #283149;
   margin-top: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 48px;
 }
 
 .skills-row-item .sushi-img-caption:hover {
@@ -369,7 +368,8 @@ p {
 
 .contact-me p {
   color: #283149;
-  width: 430px;
+  max-width: 430px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
@@ -402,8 +402,8 @@ p {
   min-height: 350px;
   width: 100%;
   text-align: center;
-  padding: 0;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-all {
@@ -466,4 +466,5 @@ p {
 .bottom-container p {
   color: white;
   margin-top: 16px;
+  margin-bottom: 0;
 }
