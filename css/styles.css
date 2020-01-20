@@ -414,9 +414,9 @@ p {
   margin: 0 25px 56px 25px;
 }
 
-.fa {
+.fab {
   padding: 5px;
-  font-size: 40px;
+  font-size: 2rem;
   width: 50px;
   text-align: center;
   text-decoration: none;
@@ -424,13 +424,13 @@ p {
   transition: 0.3s;
 }
 
-.fa:hover {
+.fab:hover {
   transform: rotateY(360deg);
   color: white;
   text-decoration: none;
 }
 
-.fa-send {
+.fa-envelope {
   font-size: 24px;
   margin-right: 10px;
   padding: 0;
@@ -439,7 +439,7 @@ p {
   top: 3px;
 }
 
-.fa-send:hover {
+.fa-envelope:hover {
   transform: none;
 }
 
