@@ -37,15 +37,24 @@ p {
   font-weight: 500;
 }
 
+.top-section {
+  background: rgb(219, 237, 243);
+  background: linear-gradient(
+    45deg,
+    rgba(219, 237, 243, 1) 0%,
+    rgba(129, 223, 255, 1) 100%
+  );
+}
+
 /*---------------Navbar---------------*/
 .header {
   padding: 3% 10% 0;
-  background-color: #dbedf3;
+  background-color: transparent;
   /* width: 100%;
     height: 100px; */
-  animation: pulse 10s;
+  /* animation: pulse 10s;
   animation-delay: 3s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 .navbar-toggler-icon {
@@ -83,17 +92,19 @@ p {
   left: 50px;
 } */
 .nav-item {
-  width: 110px;
+  width: 120px;
   text-align: center;
+  border-radius: 12px;
+  margin: 0 3px;
 }
 
 /* .navbar-nav {
   position: absolute;
   right: 50px;
 } */
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
-    background-color: #dbedf3;
+    background-color: #81dfff;
     color: #404b69;
   }
 
@@ -106,7 +117,7 @@ p {
     background-color: #404b69;
     color: #dbedf3;
   }
-}
+} */
 
 /*---------------Top container---------------*/
 .introduction {
@@ -120,7 +131,7 @@ p {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
-  background-color: #dbedf3;
+  /* background-color: #81dfff; */
   min-height: 600px;
   height: auto;
   width: 100%;
@@ -143,15 +154,6 @@ p {
   font-size: 1.3rem;
 }
 
-.top-name {
-  cursor: none;
-}
-
-.top-name:hover {
-  color: #fdffab;
-  background-color: #404b69;
-}
-
 .tree {
   max-width: 350px;
   z-index: 1;
@@ -159,7 +161,7 @@ p {
 }
 
 .cloud-1 {
-  max-height: 50px;
+  max-height: 70px;
   height: 100%;
   width: auto;
   position: absolute;
@@ -169,11 +171,11 @@ p {
 }
 
 .cloud-1:hover {
-  right: 23%;
+  right: 25%;
 }
 
 .cloud-2 {
-  max-height: 50px;
+  max-height: 70px;
   height: 100%;
   width: auto;
   position: absolute;
@@ -183,11 +185,11 @@ p {
 }
 
 .cloud-2:hover {
-  left: 28%;
+  left: 25%;
 }
 
 .cloud-3 {
-  max-height: 50px;
+  max-height: 70px;
   height: 100%;
   width: auto;
   position: absolute;
@@ -197,7 +199,7 @@ p {
 }
 
 .cloud-3:hover {
-  right: 23%;
+  right: 20%;
 }
 
 /*---------------Top container animation---------------*/
@@ -213,17 +215,24 @@ p {
   animation: pulse 10s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+  background-color: transparent !important;
 }
 
 .introduction p {
   animation: pulse 10s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+  background-color: transparent !important;
 }
 
-@keyframes pulse {
+/* @keyframes pulse {
   0% {
-    background-color: #dbedf3;
+    background: rgb(219, 237, 243);
+    background: linear-gradient(
+      45deg,
+      rgba(219, 237, 243, 1) 0%,
+      rgba(129, 223, 255, 1) 100%
+    );
     color: #404b69;
   }
 
@@ -236,7 +245,7 @@ p {
     background-color: #404b69;
     color: #dbedf3;
   }
-}
+} */
 
 /*---------------Middle container---------------*/
 .middle-container {
@@ -302,15 +311,9 @@ p {
 
 .skills-row-item h3 {
   color: #283149;
-  transition-duration: 0.3s;
   margin: 16px auto;
   width: 80%;
   max-width: 250px;
-}
-
-.skills-row-item h3:hover {
-  background-color: #f73869;
-  color: white;
 }
 
 .skills-row-item p {
@@ -320,9 +323,12 @@ p {
   max-width: 350px;
 }
 
-.skills-row-item .sushi-img-caption:hover {
-  background-color: #11999e;
-  color: white;
+.skills-row-item {
+  transition-duration: 0.3s;
+}
+
+.skills-row-item:hover {
+  transform: translateY(-5px);
 }
 
 .skills-row-item {
