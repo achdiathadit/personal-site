@@ -14,6 +14,10 @@ hr {
   margin-bottom: 0;
 }
 
+.separator {
+  margin-bottom: 48px;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -46,6 +50,11 @@ p {
   );
 }
 
+.top-section-2 {
+  background: rgb(219, 237, 243);
+  background: linear-gradient(315deg, #fdffab 0%, #f73869 100%);
+}
+
 /*---------------Navbar---------------*/
 .header {
   padding: 3% 10% 0;
@@ -73,16 +82,14 @@ p {
 }
 
 .active {
-  background-color: grey;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   color: white;
   transition-duration: 0.3s;
 }
 
 .nav-item:focus,
 .nav-item:hover {
-  background-color: grey;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   color: white;
   transition-duration: 0.3s;
 }
@@ -121,6 +128,14 @@ p {
 
 /*---------------Top container---------------*/
 .introduction {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.introduction-2 h1 {
+  color: white;
   z-index: 1;
   width: 100%;
   text-align: center;
@@ -254,11 +269,11 @@ p {
 
 /*---------------Profile---------------*/
 .profile {
-  height: 400px;
   width: 100%;
   text-align: center;
   padding: 0;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .profilepic {
@@ -358,6 +373,67 @@ p {
 
 .sushi-img:hover {
   transform: translateY(-5px);
+}
+
+/*---------------Portfolio---------------*/
+.portfolio {
+  min-height: 400px;
+  height: auto;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+
+.portfolio h2 {
+  color: #404b69;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.text {
+  display: block;
+  text-align: left;
+  margin-left: 50px;
+  min-width: 200px;
+}
+
+.text h3 {
+  color: #283149;
+  margin: 16px 0;
+  width: 80%;
+  max-width: 250px;
+}
+
+.text p {
+  color: #283149;
+  margin: 16px 0 48px;
+  width: 80%;
+  max-width: 350px;
+}
+
+.portfolio-item {
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.3s;
+  margin: auto;
+}
+
+/*---------------Portfolio images---------------*/
+.portfolio-img {
+  transition-duration: 0.3s;
+  max-height: 304px;
+  max-width: 400px;
+  min-width: 80%;
+  border-radius: 15px;
+  border: solid white 1px;
+  display: block;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.05, 1.05);
 }
 
 /*---------------Contact---------------*/
