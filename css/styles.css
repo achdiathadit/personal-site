@@ -424,8 +424,8 @@ p {
 /*---------------Portfolio images---------------*/
 .portfolio-img {
   transition-duration: 0.3s;
-  max-height: 304px;
-  max-width: 400px;
+  height: 262px;
+  width: 540px;
   min-width: 80%;
   border-radius: 15px;
   border: solid white 1px;
