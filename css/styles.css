@@ -385,6 +385,7 @@ p {
   padding: 0;
   padding-top: 50px;
   padding-bottom: 0;
+  justify-content: center;
 }
 
 .portfolio h2 {
@@ -416,7 +417,8 @@ p {
 
 .portfolio-item {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-content: center;
   transition-duration: 0.3s;
   margin: auto;
 }
@@ -429,6 +431,7 @@ p {
   border-radius: 15px;
   border: solid white 1px;
   display: block;
+  align-content: center;
   overflow: hidden;
 }
 
